@@ -1,0 +1,45 @@
+# INSTALACAO JAVA + MAVEN
+
+## Configurar as variaveis de ambiente
+
+- JAVA_HOME
+- M2_HOME
+
+## Instalar algumas extensoes
+
+- Java + Spring Extesion Pack
+
+## Alguns comandos do maven
+
+- mvn - Serve para buildar o projeto Maven
+- mvn -v
+
+
+## Criar projeto Spring boot
+
+- site: https://start.spring.io/
+
+- Group: Nome do nosso grupo de projetos
+- Artifact: Nome do projeto
+
+### Dependencias
+
+- Spring Web: Para pode criar API
+- Lombok: Para reduzir codigo
+- Spring Data JPA: Para poder usar hibernate
+- PostgresSQL: Para pode usar o Postgres
+- Spring Boot DevTools: Para o servidor restartar nas mudancas feitas.
+
+### Conceitos
+
+O Spring trabalha com injecao de dependencia, quase todas as anotacoes sao uma extensao de Component, o que permite
+a injecao de dependencia por parte do Spring.
+
+A injecao de dependencia pode acontecer atraves do constructor, setter e da anotacao @autowired
+
+````
+	public CourseController(CourseRepository repository) {
+        this.repository = repository;
+    }
+
+````
